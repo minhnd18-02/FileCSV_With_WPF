@@ -1,0 +1,14 @@
+D:\Documents\Repositories\FileCSV_with_DB\Repository3\bin\Debug\net8.0\Repository3.deps.json
+D:\Documents\Repositories\FileCSV_with_DB\Repository3\bin\Debug\net8.0\Repository3.runtimeconfig.json
+D:\Documents\Repositories\FileCSV_with_DB\Repository3\bin\Debug\net8.0\Repository3.dll
+D:\Documents\Repositories\FileCSV_with_DB\Repository3\bin\Debug\net8.0\Repository3.pdb
+D:\Documents\Repositories\FileCSV_with_DB\Repository3\obj\Debug\net8.0\Repository3.csproj.AssemblyReference.cache
+D:\Documents\Repositories\FileCSV_with_DB\Repository3\obj\Debug\net8.0\Repository3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Repositories\FileCSV_with_DB\Repository3\obj\Debug\net8.0\Repository3.AssemblyInfoInputs.cache
+D:\Documents\Repositories\FileCSV_with_DB\Repository3\obj\Debug\net8.0\Repository3.AssemblyInfo.cs
+D:\Documents\Repositories\FileCSV_with_DB\Repository3\obj\Debug\net8.0\Repository3.csproj.CoreCompileInputs.cache
+D:\Documents\Repositories\FileCSV_with_DB\Repository3\obj\Debug\net8.0\Repository3.dll
+D:\Documents\Repositories\FileCSV_with_DB\Repository3\obj\Debug\net8.0\refint\Repository3.dll
+D:\Documents\Repositories\FileCSV_with_DB\Repository3\obj\Debug\net8.0\Repository3.pdb
+D:\Documents\Repositories\FileCSV_with_DB\Repository3\obj\Debug\net8.0\Repository3.genruntimeconfig.cache
+D:\Documents\Repositories\FileCSV_with_DB\Repository3\obj\Debug\net8.0\ref\Repository3.dll

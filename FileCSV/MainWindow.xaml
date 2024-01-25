@@ -1,0 +1,53 @@
+﻿<Window x:Class="FileCSV.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileCSV"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="504" Width="1351">
+    <Grid Margin="0,0,34,18">
+        <DataGrid x:Name="dtMark" AutoGenerateColumns="False" Margin="51,89,696,89">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="SBD" Binding="{Binding Sbd}" />
+                <DataGridTextColumn Header="Toan" Binding="{Binding Toan}" />
+                <DataGridTextColumn Header="Van" Binding="{Binding Van}" />
+                <DataGridTextColumn Header="Ly" Binding="{Binding Ly}" />
+                <DataGridTextColumn Header="Sinh" Binding="{Binding Sinh}" />
+                <DataGridTextColumn Header="Ngoai ngu" Binding="{Binding Ngoaingu}" />
+                <DataGridTextColumn Header="Year" Binding="{Binding Year}" />
+                <DataGridTextColumn Header="Hoa" Binding="{Binding Hoa}" />
+                <DataGridTextColumn Header="Lich su" Binding="{Binding Lichsu}" />
+                <DataGridTextColumn Header="Dia ly" Binding="{Binding Dialy}" />
+                <DataGridTextColumn Header="GDCD" Binding="{Binding Gdcd}" />
+                <DataGridTextColumn Header="Ma Tinh" Binding="{Binding MaTinh}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnCalculate" Content="Top3" HorizontalAlignment="Left" Margin="147,30,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.185,-0.123"/>
+        <ComboBox x:Name="cbYear" HorizontalAlignment="Left" Margin="218,32,0,0" VerticalAlignment="Top" Width="70" Height="18" SelectionChanged="cbYear_SelectionChanged"/>
+        <TextBox x:Name="txtFile" HorizontalAlignment="Left" Margin="293,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266"/>
+        <Button x:Name="btnInput" Content="Input" HorizontalAlignment="Left" Margin="346,55,0,0" VerticalAlignment="Top" Width="70" Click="btnInput_Click"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="445,55,0,0" VerticalAlignment="Top" Width="70"/>
+        <Button x:Name="btnBrowseFile" Content="...." HorizontalAlignment="Left" Margin="564,32,0,0" VerticalAlignment="Top" Height="18" Width="15" Click="btnBrowseFile_Click"/>
+        <Button x:Name="btnShowStatistic" Content="Show statistics" HorizontalAlignment="Left" Margin="683,35,0,0" VerticalAlignment="Top" Click="btnShowStatistic_Click"/>
+        <ListView x:Name="listView" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="683,89,170,89">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Year" DisplayMemberBinding="{Binding Year}"/>
+                    <GridViewColumn Header="StudentCountAtThisYear" DisplayMemberBinding="{Binding StudentCountAtThisYear}"/>
+                    <GridViewColumn Header="CountToan" DisplayMemberBinding="{Binding CountToan}"/>
+                    <GridViewColumn Header="CountVan" DisplayMemberBinding="{Binding CountVan}"/>
+                    <GridViewColumn Header="CountLy" DisplayMemberBinding="{Binding CountLy}"/>
+                    <GridViewColumn Header="CountSinh" DisplayMemberBinding="{Binding CountSinh}"/>
+                    <GridViewColumn Header="CountNgoaiNgu" DisplayMemberBinding="{Binding CountNgoaiNgu}"/>
+                    <GridViewColumn Header="CountHoa" DisplayMemberBinding="{Binding CountHoa}"/>
+                    <GridViewColumn Header="CountLichSu" DisplayMemberBinding="{Binding CountLichSu}"/>
+                    <GridViewColumn Header="CountDiaLy" DisplayMemberBinding="{Binding CountDiaLy}"/>
+                    <GridViewColumn Header="CountGDCD" DisplayMemberBinding="{Binding CountGDCD}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+    </Grid>
+</Window>
