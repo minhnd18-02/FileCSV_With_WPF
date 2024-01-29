@@ -6,9 +6,8 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Windows;
-using Repository3.Services;
-using FileCSV;
 using Repository3;
+using Repository3.Services;
 using Repository3.Models;
 
 namespace FileCSV
@@ -18,7 +17,7 @@ namespace FileCSV
     /// </summary>
     public partial class MainWindow : Window
     {
-        private List<MarkReport> markReports;
+        private List<MarkReports> markReports;
         private readonly MarkReportServices _markReportService;
         public MainWindow()
         {
@@ -44,7 +43,7 @@ namespace FileCSV
                 using (var reader = new StreamReader(ofd.FileName))
                 using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)))
                 {
-                    markReports = csv.GetRecords<MarkReport>().ToList();
+                    markReports = csv.GetRecords<MarkReports>().ToList();
                 }
 
                 dtMark.ItemsSource = markReports;
@@ -108,8 +107,8 @@ namespace FileCSV
                 using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)))
                 {
                     var headers = csv.HeaderRecord;
-                    markReports = csv.GetRecords<MarkReport>().ToList();
-                    
+                    markReports = csv.GetRecords<MarkReports>().ToList();
+
                 }
                 dtMark.ItemsSource = markReports;
             }
@@ -140,13 +139,13 @@ namespace FileCSV
 
         private void btnShowStatistic_Click(object sender, RoutedEventArgs e)
         {
-            using ( var context = new FileCsvContext())
+            using (var context = new FileCsvContext())
             {
                 var loaderData = new LoadData(context);
 
                 List<DataStatistics> dataStatistics = loaderData.LoadStatistics();
                 listView.ItemsSource = dataStatistics;
-                
+
             }
         }
     }

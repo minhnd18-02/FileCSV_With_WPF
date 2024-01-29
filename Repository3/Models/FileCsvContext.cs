@@ -15,7 +15,7 @@ public partial class FileCsvContext : DbContext
     {
     }
 
-    public virtual DbSet<MarkReport> MarkReports { get; set; }
+    public virtual DbSet<MarkReports> MarkReports { get; set; }
 
     public virtual DbSet<Province> Provinces { get; set; }
 
@@ -31,11 +31,9 @@ public partial class FileCsvContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<MarkReport>(entity =>
+        modelBuilder.Entity<MarkReports>(entity =>
         {
             entity.HasKey(e => e.Sbd);
-
-            entity.Property(e => e.Gdcd).HasColumnName("GDCD");
         });
 
         modelBuilder.Entity<Province>(entity =>

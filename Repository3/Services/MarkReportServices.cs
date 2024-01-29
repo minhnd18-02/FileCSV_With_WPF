@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Repository3.Services
 {
-    public class MarkReportServices : ServiceBase<MarkReport>
+    public class MarkReportServices : ServiceBase<MarkReports>
     {
         public MarkReportServices(FileCsvContext context) : base(context)
         {

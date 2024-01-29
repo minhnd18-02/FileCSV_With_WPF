@@ -19,7 +19,7 @@ namespace Repository3
             optionsBuilder.UseNpgsql(("Host=localhost; Database=FileCsv; Username=postgres; Password=12345678"));
         }
         //Add the table in to database
-        public DbSet<MarkReport> MarkReports { get; set; }
+        public DbSet<MarkReports> MarkReports { get; set; }
         //...add more if have or need
     }
 
